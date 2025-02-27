@@ -6,7 +6,7 @@ export async function renderProfile() {
   const posts = await getUserPosts(user.id);
 
   app.innerHTML = `
-  <main class="container">
+  <main class="container" id="container">
     <div class="profile">
       <h2>${user.name}</h2>
       <p>Email: ${user.email}</p>

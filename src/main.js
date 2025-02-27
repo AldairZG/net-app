@@ -22,7 +22,7 @@ export async function renderHome() {
         <div class="post">
           <h3>${post.title}</h3>
           <p>${post.body}</p>
-          <button class="like-btn" data-id="${post.id}" >${likes[post.id] ? '❤' : '🤍 '}</button>
+          <button class="like-btn btn btn-dark" data-id="${post.id}" >${likes[post.id] ? '❤' : '🤍 '}</button>
         </div>
       `).join('')
     }
